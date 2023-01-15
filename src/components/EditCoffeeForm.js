@@ -8,7 +8,7 @@ function EditCoffeeForm (props) {
     e.preventDefault();
     props.onEditCoffee({
       name: e.target.name.value, 
-      // origin: e.target.origin.value, 
+      origin: e.target.origin.value, 
       price: e.target.price.value, 
       roast: e.target.roast.value,
       quantity: 130,

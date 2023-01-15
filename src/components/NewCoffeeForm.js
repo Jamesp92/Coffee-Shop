@@ -20,7 +20,7 @@ function NewCoffeeForm(props){
       roast: event.target.roast.value, 
       origin: event.target.origin.value,
       price: event.target.price.value,
-      quantity: 130,
+      pounds: 130,
       id: v4()
     });
   }

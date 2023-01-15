@@ -5,9 +5,10 @@ function Coffee(props){
   return (
     <>
       <div onClick = {() => props.whenCoffeeClicked(props.id)}>
-        <h3>Coffee name : {props.name}  </h3>
-        <h3>Roast: {props.roast}</h3>
-        <h3>Price: {props.price}</h3>
+        <h3>Coffee name:{props.name}  </h3>
+        <h3>Roast:{props.roast}</h3>
+        <h3>Price:${props.price}</h3>
+        <h3>Inventory:{props.pounds}</h3>
         <hr/>
       </div>
     </>
@@ -20,6 +21,7 @@ Coffee.propTypes = {
   origin: PropTypes.string,
   price: PropTypes.string,
   id: PropTypes.string,
+  pounds: PropTypes.number,
   whenCoffeeClicked: PropTypes.func
 };
 
