@@ -6,20 +6,20 @@ import ReusableForm from './ReusableForm';
 function NewCoffeeForm(props){
   
   return (
-    <React.Fragment>
+    <>
       <ReusableForm
         formSubmissionHandler={handleNewCoffeeFormSubmission} 
         buttonText="Add" />
-    </React.Fragment>
+    </>
   );
 
-  function handleNewCoffeeFormSubmission(event) {
-    event.preventDefault();
+  function handleNewCoffeeFormSubmission(e) {
+    e.preventDefault();
     props.onNewCoffeeCreation({
-      name: event.target.name.value, 
-      roast: event.target.roast.value, 
-      origin: event.target.origin.value,
-      price: event.target.price.value,
+      name: e.target.name.value, 
+      roast: e.target.roast.value, 
+      origin: e.target.origin.value,
+      price: e.target.price.value,
       pounds: 130,
       id: v4()
     });
