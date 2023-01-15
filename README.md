@@ -20,8 +20,7 @@ Week 2 React Project for Epicodus
 
 ## Known Bugs
 
-- Edit form will not autopopulate with previous data
-- Styling could be better
+- None yet.
 
 ## Available Scripts
 

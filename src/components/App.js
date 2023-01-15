@@ -1,4 +1,3 @@
-import React from 'react';
 import CoffeeController from './CoffeeControl.js';
 import Header from './Header.js'
 
