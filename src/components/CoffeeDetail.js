@@ -6,9 +6,12 @@ function CoffeeDetail(props){
   return (
     <>
       <h1>coffee Detail</h1>
-      <h3>{props.name} - {props.roast} - {props.origin} - {props.price}</h3>  
+      <h3>Coffee Name: {coffee.name} </h3>  
+      <h3>Coffee Roast: {coffee.roast} </h3>   
+      <h3>Coffee Price: {coffee.price} </h3>  
       <button onClick={onClickingEdit}>Update coffee</button>
       <button onClick={()=> onClickingDelete(coffee.id)}>get rid of coffee</button>
+      <button onClick={()=> props.onClickingSell(coffee.id)}>Sell 1 pound</button>
       <hr/>
     </>
   );

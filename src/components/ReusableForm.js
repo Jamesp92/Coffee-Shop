@@ -10,7 +10,7 @@ function ReusableForm(props) {
               placeholder='Coffee Name' />
             <input
               type='text'
-              name='Origin'
+              name='origin'
               placeholder='Coffee Origin' />
             <input
               type='text'

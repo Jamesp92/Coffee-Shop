@@ -1,14 +1,14 @@
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
 
-function EditCoffetForm (props) {
+function EditCoffeeForm (props) {
   const { coffee } = props;
 
   function handleEditCoffeeFormSubmission(e) {
     e.preventDefault();
     props.onEditCoffee({
       name: e.target.name.value, 
-      origin: e.target.origin.value, 
+      // origin: e.target.origin.value, 
       price: e.target.price.value, 
       roast: e.target.roast.value,
       quantity: 130,
